@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我与自然圆形绘制</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 20px auto;
+        }
+        #controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">自我与自然圆形绘制</h1>
+    <div id="controls">
+        <button id="selectYellow">黄色圆（自我）</button>
+        <button id="selectGreen">绿色圆（自然）</button>
+        <button id="undo">撤销</button>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div id="info" style="text-align: center;">
+        <p>自然圆面积：<span id="natureArea">0</span> 像素²</p>
+        <p>自我圆面积：<span id="selfArea">0</span> 像素²</p>
+        <p>自然圆面积 / 自我圆面积：<span id="areaRatio">0</span></p>
+        <p>自然圆与自我圆重叠部分的面积：<span id="overlapArea">0</span> 像素²</p>
+        <p>自然圆与自我圆重叠部分的面积 / （自然圆面积 + 自我圆面积）：<span id="overlapRatio">0</span></p>
+        <p>两圆圆心之间的距离：<span id="distance">0</span> 像素</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
